@@ -34,7 +34,7 @@ bool ExtremeVulnerableShmemDev::initWithTask(task_t inTask, vm_size_t capacity){
     }
     this->kernelData = 0;
     this->desc = shmem;
-    return kIOReturnSuccess;
+    return true;
 }
 
 mach_vm_address_t ExtremeVulnerableShmemDev::getClientData(){
